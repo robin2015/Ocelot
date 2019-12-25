@@ -29,6 +29,7 @@ namespace Ocelot.Configuration.Creator
             _configurationValidator = configurationValidator;
         }
 
+        //TODO Ω‚Œˆ≈‰÷√
         public async Task<Response<IInternalConfiguration>> Create(FileConfiguration fileConfiguration)
         {
             var response = await _configurationValidator.IsValid(fileConfiguration);
@@ -49,7 +50,7 @@ namespace Ocelot.Configuration.Creator
                 .Union(dynamicReRoute)
                 .ToList();
 
-            var config = _configCreator.Create(fileConfiguration, mergedReRoutes);
+            InternalConfiguration config = _configCreator.Create(fileConfiguration, mergedReRoutes);
 
             return new OkResponse<IInternalConfiguration>(config);
         }

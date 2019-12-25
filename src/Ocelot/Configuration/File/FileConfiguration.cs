@@ -2,6 +2,7 @@
 
 namespace Ocelot.Configuration.File
 {
+    //TODO 文件配置数据结构
     public class FileConfiguration
     {
         public FileConfiguration()

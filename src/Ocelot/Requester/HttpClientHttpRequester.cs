@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ocelot.Requester
 {
+    //TODO 发送给下游的请求
     public class HttpClientHttpRequester : IHttpRequester
     {
         private readonly IHttpClientCache _cacheHandlers;

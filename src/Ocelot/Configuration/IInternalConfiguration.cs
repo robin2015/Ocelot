@@ -2,6 +2,7 @@ using System.Collections.Generic;
 
 namespace Ocelot.Configuration
 {
+    //TODO 内部用的配置文件对象
     public interface IInternalConfiguration
     {
         List<ReRoute> ReRoutes { get; }

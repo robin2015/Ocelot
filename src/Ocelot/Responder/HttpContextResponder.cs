@@ -21,8 +21,9 @@ namespace Ocelot.Responder
         {
             _removeOutputHeaders = removeOutputHeaders;
         }
-
-        public async Task SetResponseOnHttpContext(HttpContext context, DownstreamResponse response)
+        //TODO 把下游返回的数据复制到上游返回数据结构中
+        public async Task SetResponseOnHttpContext(HttpContext context, 
+            DownstreamResponse response)
         {
             _removeOutputHeaders.Remove(response.Headers);
 

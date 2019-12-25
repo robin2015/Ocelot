@@ -15,6 +15,7 @@
     {
         private readonly string[] _unsupportedHeaders = { "host" };
 
+        //TODO 构建下游请求数据结构
         public async Task<Response<HttpRequestMessage>> Map(HttpRequest request)
         {
             try
